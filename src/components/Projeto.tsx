@@ -1,9 +1,28 @@
 import { odsData } from "@/data/ebooks";
 
 const projectPillars = [
-  { value: "06", label: "Guias temáticos abertos" },
-  { value: "100%", label: "Acesso gratuito e cidadão" },
+  { value: "06", label: "Guias temáticos (34 pág. cada)" },
+  { value: "30", label: "Capítulos práticos no acervo" },
+  { value: "100%", label: "Acesso gratuito e aberto" },
   { value: "04", label: "ODS da ONU contemplados" },
+];
+
+const methodologySteps = [
+  {
+    code: "01",
+    title: "Conhecimento",
+    text: "Fundamentos claros sobre o que a Inteligência Artificial faz, seus limites técnicos e por que ela não substitui o julgamento humano.",
+  },
+  {
+    code: "02",
+    title: "Aplicação",
+    text: "Estudos de caso reais, checklists operacionais, roteiros de implementação em etapas e exemplos práticos adaptados à realidade brasileira.",
+  },
+  {
+    code: "03",
+    title: "Responsabilidade",
+    text: "Diretrizes de ética, proteção de dados pessoais (LGPD), prevenção a fraudes, combate a vieses e supervisão humana em todas as decisões.",
+  },
 ];
 
 export default function Projeto() {
@@ -14,10 +33,10 @@ export default function Projeto() {
         <div className="reveal grid grid-cols-1 gap-10 border-t border-neutral-800 pt-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
           <div>
             <p className="text-xs uppercase tracking-widest text-neutral-500">
-              O Projeto
+              O Projeto · Edição 2026
             </p>
             <h2 className="mt-4 text-2xl font-medium tracking-[-0.02em] text-white md:text-3xl">
-              Tecnologia que inclui, educa e transforma
+              Conhecimento, aplicação e responsabilidade
             </h2>
           </div>
 
@@ -27,24 +46,43 @@ export default function Projeto() {
               <span className="text-white">
                 IA na Prática: Inteligência Artificial aplicada ao cotidiano
               </span>{" "}
-              é um Projeto de Extensão Universitária do curso de Sistemas de
-              Informação. Nasceu para levar o conhecimento produzido na
-              universidade para estudantes, trabalhadores, pequenos comerciantes
-              e a comunidade em linguagem direta e acessível.
+              é um Projeto de Extensão Universitária em Sistemas de Informação.
+              Cada guia temático de 34 páginas foi estruturado em 5 capítulos
+              progressivos, combinando base conceitual sólida, ferramentas de
+              apoio à decisão, estudos de caso, plano de implementação e
+              glossário acessível.
             </p>
             <p className="mt-4 text-base leading-relaxed text-neutral-400">
-              Os 6 volumes têm licença aberta, distribuição gratuita e
-              alinhamento direto aos Objetivos de Desenvolvimento Sustentável da
-              ONU.
+              O objetivo é aproximar o conhecimento acadêmico de estudantes,
+              educadores, microempreendedores, trabalhadores e lideranças
+              comunitárias, promovendo autonomia tecnológica com ética e
+              segurança.
             </p>
 
-            <div className="mt-10 grid grid-cols-3 gap-6 border-t border-neutral-800 pt-6">
+            <div className="mt-10 grid grid-cols-2 gap-6 border-t border-neutral-800 pt-6 sm:grid-cols-4">
               {projectPillars.map((item) => (
                 <div key={item.label}>
                   <p className="text-2xl font-medium tracking-tight text-white md:text-3xl">
                     {item.value}
                   </p>
                   <p className="mt-1 text-xs text-neutral-500">{item.label}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Três eixos editoriais dos e-books */}
+            <div className="mt-10 grid grid-cols-1 gap-6 border-t border-neutral-800 pt-8 sm:grid-cols-3">
+              {methodologySteps.map((step) => (
+                <div key={step.code}>
+                  <p className="text-xs tabular-nums text-neutral-500">
+                    Eixo {step.code}
+                  </p>
+                  <h3 className="mt-1.5 text-sm font-medium text-white">
+                    {step.title}
+                  </h3>
+                  <p className="mt-1.5 text-xs leading-relaxed text-neutral-400">
+                    {step.text}
+                  </p>
                 </div>
               ))}
             </div>
@@ -62,8 +100,8 @@ export default function Projeto() {
                 Alinhamento com os ODS da ONU
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-neutral-400">
-                O projeto contribui diretamente para quatro metas da Agenda 2030
-                das Nações Unidas.
+                Os seis volumes da coleção dialogam diretamente com quatro metas
+                da Agenda 2030 das Nações Unidas.
               </p>
             </div>
 
