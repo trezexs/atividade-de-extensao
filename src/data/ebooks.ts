@@ -46,104 +46,100 @@ export const ebooksData: Ebook[] = [
     title:
       "Inteligência Artificial e Transformação Social: Caminhos para uma Sociedade mais Inclusiva",
     shortSummary:
-      "Acessibilidade, inclusão digital, equidade e exercício da cidadania mediados pelo uso responsável da Inteligência Artificial.",
-    focus: "Acessibilidade, inclusão digital, equidade e exercício da cidadania",
-    audience: "Cidadãos, lideranças sociais, educadores, familiares e agentes comunitários",
+      "Direitos humanos, acessibilidade, redução de desigualdades, serviços públicos e governança ética para iniciativas inclusivas com IA.",
+    focus: "Inclusão digital, redução de desigualdades, serviços públicos e direitos",
+    audience: "Estudantes, educadores, gestores públicos, organizações sociais e cidadãos",
     readingTime: "35 min de leitura",
     pages: "34 páginas",
     edition: "Edição 2026",
     coverGradient:
       "radial-gradient(circle at 30% 25%, #262626 0%, #111111 55%, #070707 100%)",
     coverUrl: "",
-    // ESPAÇO RESERVADO PARA O VOLUME 1:
-    // Quando enviar o PDF deste volume, basta salvar em:
-    // public/ebooks/volume-01-inclusao.pdf
-    // e preencher pdfUrl com "/ebooks/volume-01-inclusao.pdf"
-    pdfUrl: "",
+    pdfUrl: "/ebooks/volume-01-inclusao.pdf",
     pdfFileName: "IA_na_Pratica_Vol_01_Transformacao_Social.pdf",
     topics: [
-      "Fundamentos da inclusão digital e transformação social na era da IA",
-      "Tecnologias assistivas, leitura de tela, audiodescrição e legendagem em tempo real",
-      "Acesso a direitos, serviços públicos digitais e linguagem simples para o cidadão",
-      "Ética, combate a vieses algorítmicos e proteção de grupos vulneráveis",
-      "Plano prático de inclusão e letramento digital comunitário",
+      "Fundamentos da IA e da transformação social: dados, infraestrutura e direitos humanos",
+      "Inclusão, acesso e redução de desigualdades: tecnologias assistivas e mitigação de vieses",
+      "IA em serviços públicos e políticas sociais: saúde, educação, cidades e controle democrático",
+      "Ética, governança e proteção de pessoas: privacidade, supervisão humana e sustentabilidade",
+      "Implementação de iniciativas inclusivas: diagnóstico participativo e parcerias comunitárias",
     ],
     chapters: [
       {
         number: "01",
-        title: "Fundamentos da inclusão digital e transformação social",
+        title: "Fundamentos da IA e da transformação social",
         items: [
-          "O que significa inclusão digital na era da Inteligência Artificial",
-          "Barreiras de acesso, conectividade, letramento e desigualdades sociais",
-          "O papel da tecnologia como ponte para autonomia e participação cidadã",
-          "Princípios éticos para que a inovação não amplie exclusões",
+          "Compreendendo a inteligência artificial além do entusiasmo tecnológico",
+          "Dados, algoritmos e infraestrutura: a base material da inovação",
+          "Transformação social, direitos humanos e desenvolvimento sustentável",
+          "Como identificar problemas sociais que podem ser apoiados por IA",
         ],
       },
       {
         number: "02",
-        title: "Tecnologias assistivas e acessibilidade no cotidiano",
+        title: "Inclusão, acesso e redução de desigualdades",
         items: [
-          "Recursos gratuitos de acessibilidade já disponíveis em celulares e computadores",
-          "Leitores de tela, reconhecimento óptico de textos e audiodescrição",
-          "Legendagem em tempo real e apoio à comunicação de pessoas com deficiência",
-          "Adaptação de linguagem e formatos para idosos e pessoas com baixa escolaridade",
+          "Desigualdade digital: conectividade, dispositivos e letramento",
+          "Acessibilidade e tecnologias assistivas baseadas em IA",
+          "Viés algorítmico, discriminação e representação de grupos",
+          "Participação social no desenho de soluções tecnológicas",
         ],
       },
       {
         number: "03",
-        title: "Cidadania, direitos e acesso a serviços públicos",
+        title: "IA em serviços públicos e políticas sociais",
         items: [
-          "Tradução de termos burocráticos e jurídicos para linguagem cidadã",
-          "Orientação no acesso a serviços públicos digitais, saúde e assistência",
-          "Prevenção à desinformação e fortalecimento da tomada de decisão consciente",
-          "Privacidade e proteção de dados pessoais de populações vulneráveis",
+          "Saúde pública, prevenção e apoio à tomada de decisão",
+          "Educação, assistência social e proteção de direitos",
+          "Cidades inteligentes, mobilidade e serviços urbanos",
+          "Transparência, explicabilidade e controle democrático",
         ],
       },
       {
         number: "04",
-        title: "Ética, equidade e mitigação de vieses",
+        title: "Ética, governança e proteção de pessoas",
         items: [
-          "Representatividade cultural, regional e linguística nos sistemas de IA",
-          "Riscos de discriminação algorítmica em serviços essenciais",
-          "Supervisão humana e canais acessíveis de revisão e atendimento",
-          "Responsabilidade pública, comunitária e institucional",
+          "Privacidade, proteção de dados e consentimento",
+          "Responsabilização, supervisão humana e direito de contestação",
+          "Desinformação, manipulação e integridade informacional",
+          "Impactos ambientais e sustentabilidade da infraestrutura",
         ],
       },
       {
         number: "05",
-        title: "Caminhos práticos para uma sociedade mais inclusiva",
+        title: "Implementação de iniciativas inclusivas",
         items: [
-          "Diagnóstico participativo de barreiras digitais na família e na comunidade",
-          "Oficinas de apoio intergeracional e multiplicadores de letramento digital",
-          "Seleção de ferramentas gratuitas, seguras e de baixo consumo de dados",
-          "Avaliação contínua de impacto social e autonomia dos usuários",
+          "Diagnóstico participativo e priorização de necessidades",
+          "Desenvolvimento, testes e avaliação de impacto social",
+          "Parcerias entre universidade, governo, empresas e comunidade",
+          "Escala responsável, continuidade e prestação de contas",
         ],
       },
     ],
     caseStudy:
-      "Projeto comunitário de apoio intergeracional utiliza recursos de leitura por voz, ampliação e simplificação de textos em celulares para auxiliar idosos e pessoas com baixa visão a compreender comunicados públicos, receitas médicas e serviços digitais com acompanhamento humano.",
+      "Uma prefeitura identifica que moradores de bairros periféricos têm dificuldade para acessar informações sobre serviços, horários e documentação. Em vez de começar pela compra de uma plataforma, a equipe realiza oficinas com moradores, mapeia dúvidas recorrentes e testa um assistente virtual multilíngue indicando fontes oficiais, encaminhando casos complexos a atendentes humanos e garantindo que nenhuma elegibilidade a benefícios seja decidida de forma automatizada.",
     practicalTip:
-      "Ative os recursos nativos de acessibilidade do celular e utilize a leitura por voz combinada com resumos em linguagem simples para apoiar idosos e pessoas com baixa visão na leitura de bulas, comunicados e documentos.",
+      "Em 90 dias, mapeie uma necessidade social junto às pessoas afetadas, teste uma solução simples em tarefa de baixo risco com minimização de dados pessoais e mantenha sempre canais de supervisão humana e direito de contestação.",
     glossary: [
       {
-        term: "Acessibilidade digital",
+        term: "Acessibilidade",
         definition:
-          "Eliminação de barreiras no uso de tecnologias para que todas as pessoas possam perceber, compreender, navegar e interagir com autonomia.",
+          "Condição de uso autônomo e seguro por pessoas com diferentes capacidades e necessidades.",
       },
       {
-        term: "Tecnologia assistiva",
+        term: "Viés algorítmico",
         definition:
-          "Recursos e serviços que promovem funcionalidade, independência e inclusão de pessoas com deficiência ou mobilidade reduzida.",
+          "Distorção sistemática nos dados ou modelos que pode produzir resultados desiguais ou discriminatórios.",
       },
       {
-        term: "Linguagem simples",
+        term: "Inclusão digital",
         definition:
-          "Técnica de comunicação clara e direta que facilita a compreensão de informações públicas e essenciais por qualquer cidadão.",
+          "Condições efetivas de conectividade, acesso a dispositivos, competência crítica e participação no ambiente digital.",
       },
       {
-        term: "Equidade digital",
+        term: "Supervisão humana",
         definition:
-          "Condição em que todos os indivíduos e comunidades possuem capacidade plena de acesso e uso significativo das tecnologias.",
+          "Participação efetiva de pessoas na revisão, validação e controle de decisões apoiadas por sistemas automatizados.",
       },
     ],
     category: "Inclusão",
