@@ -579,7 +579,7 @@ export const ebooksData: Ebook[] = [
     edition: "Edição 2026",
     coverGradient:
       "radial-gradient(circle at 55% 40%, #242424 0%, #101010 58%, #070707 100%)",
-    coverUrl: "",
+    coverUrl: "/capas/capa-volume-06.jpg",
     pdfUrl: "/ebooks/volume-06-desenvolvimento-comunitario.pdf",
     pdfFileName: "IA_na_Pratica_Vol_06_Desenvolvimento_Comunitario.pdf",
     topics: [
