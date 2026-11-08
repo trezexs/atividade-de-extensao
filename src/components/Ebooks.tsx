@@ -16,14 +16,23 @@ function CoverBlock({
       <button
         type="button"
         onClick={onClick}
-        className="group relative aspect-[5/4] w-full overflow-hidden rounded-sm border border-neutral-800/80 text-left focus:outline-none focus:ring-1 focus:ring-white/40"
+        aria-label={`Ver detalhes do ${ebook.volume}: ${ebook.title}`}
+        className="group relative aspect-[3/4] w-full overflow-hidden rounded-md border border-neutral-800/90 bg-neutral-950 text-left shadow-lg transition-all duration-300 hover:border-neutral-600 focus:outline-none focus:ring-1 focus:ring-white/40"
       >
         <img
           src={ebook.coverUrl}
           alt={`Capa do ${ebook.volume}: ${ebook.title}`}
           loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+        <span className="absolute top-3 right-3 rounded-full border border-white/20 bg-black/75 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
+          {ebook.category}
+        </span>
+        <div className="absolute inset-x-3 bottom-3 flex items-center justify-between text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <span className="text-[11px] font-medium">{ebook.volume}</span>
+          <span className="text-[11px] font-medium underline underline-offset-2">Ver detalhes →</span>
+        </div>
       </button>
     );
   }
@@ -33,18 +42,12 @@ function CoverBlock({
       type="button"
       onClick={onClick}
       aria-label={`Ver detalhes do ${ebook.volume}: ${ebook.title}`}
-      className="group relative aspect-[5/4] w-full overflow-hidden rounded-sm border border-neutral-800/80 p-5 text-left transition-colors duration-300 hover:border-neutral-600 focus:outline-none focus:ring-1 focus:ring-white/40"
+      className="group relative aspect-[3/4] w-full overflow-hidden rounded-md border border-dashed border-neutral-800 bg-neutral-950 p-5 text-left transition-colors duration-300 hover:border-neutral-600 focus:outline-none focus:ring-1 focus:ring-white/40"
       style={{ background: ebook.coverGradient }}
     >
       <div className="flex items-center justify-between gap-2">
-        <span
-          className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[10px] font-medium tracking-wide ${
-            hasPdf
-              ? "border-white/20 bg-white/10 text-white"
-              : "border-neutral-700 bg-neutral-900/90 text-neutral-400"
-          }`}
-        >
-          {hasPdf ? "PDF disponível · 34 pág." : "Em breve · Espaço reservado"}
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-neutral-700 bg-neutral-900/90 px-2.5 py-0.5 text-[10px] font-medium text-neutral-400">
+          Capa em breve
         </span>
 
         <span className="text-[11px] font-medium text-neutral-400 transition-colors duration-200 group-hover:text-neutral-200">
@@ -295,23 +298,34 @@ function EbookModal({
           </div>
         ) : (
           <div className="flex-1 space-y-6 overflow-y-auto p-6">
-            {/* Foco e público */}
-            <div className="grid grid-cols-1 gap-4 border-b border-neutral-800 pb-5 sm:grid-cols-2">
-              <div>
-                <p className="text-xs font-medium text-neutral-500">
-                  Foco do volume
-                </p>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-200">
-                  {ebook.focus}
-                </p>
-              </div>
-              <div>
-                <p className="text-xs font-medium text-neutral-500">
-                  Público indicado
-                </p>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-200">
-                  {ebook.audience}
-                </p>
+            {/* Foco, público e miniatura da capa */}
+            <div className="flex flex-col gap-5 border-b border-neutral-800 pb-5 sm:flex-row sm:items-start">
+              {ebook.coverUrl && (
+                <div className="aspect-[3/4] w-28 shrink-0 overflow-hidden rounded-md border border-neutral-800 shadow-md sm:w-32">
+                  <img
+                    src={ebook.coverUrl}
+                    alt={`Capa do ${ebook.volume}`}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              )}
+              <div className="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <p className="text-xs font-medium text-neutral-500">
+                    Foco do volume
+                  </p>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-200">
+                    {ebook.focus}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-neutral-500">
+                    Público indicado
+                  </p>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-200">
+                    {ebook.audience}
+                  </p>
+                </div>
               </div>
             </div>
 

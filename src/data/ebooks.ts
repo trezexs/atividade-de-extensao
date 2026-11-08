@@ -54,7 +54,7 @@ export const ebooksData: Ebook[] = [
     edition: "Edição 2026",
     coverGradient:
       "radial-gradient(circle at 30% 25%, #262626 0%, #111111 55%, #070707 100%)",
-    coverUrl: "",
+    coverUrl: "/capas/capa-volume-01.jpg",
     pdfUrl: "/ebooks/volume-01-inclusao.pdf",
     pdfFileName: "IA_na_Pratica_Vol_01_Transformacao_Social.pdf",
     topics: [
@@ -159,7 +159,7 @@ export const ebooksData: Ebook[] = [
     edition: "Edição 2026",
     coverGradient:
       "radial-gradient(circle at 70% 30%, #242424 0%, #101010 58%, #070707 100%)",
-    coverUrl: "",
+    coverUrl: "/capas/capa-volume-02.jpg",
     pdfUrl: "/ebooks/volume-02-educacao.pdf",
     pdfFileName: "IA_na_Pratica_Vol_02_Educacao.pdf",
     topics: [
@@ -264,7 +264,7 @@ export const ebooksData: Ebook[] = [
     edition: "Edição 2026",
     coverGradient:
       "radial-gradient(circle at 45% 65%, #252525 0%, #111111 58%, #070707 100%)",
-    coverUrl: "",
+    coverUrl: "/capas/capa-volume-03.jpg",
     pdfUrl: "/ebooks/volume-03-empreendedorismo.pdf",
     pdfFileName: "IA_na_Pratica_Vol_03_Empreendedorismo.pdf",
     topics: [
@@ -369,7 +369,7 @@ export const ebooksData: Ebook[] = [
     edition: "Edição 2026",
     coverGradient:
       "radial-gradient(circle at 60% 35%, #232323 0%, #101010 58%, #070707 100%)",
-    coverUrl: "",
+    coverUrl: "/capas/capa-volume-04.jpg",
     pdfUrl: "/ebooks/volume-04-seguranca-digital.pdf",
     pdfFileName: "IA_na_Pratica_Vol_04_Seguranca_Digital.pdf",
     topics: [
@@ -474,7 +474,7 @@ export const ebooksData: Ebook[] = [
     edition: "Edição 2026",
     coverGradient:
       "radial-gradient(circle at 35% 55%, #262626 0%, #111111 58%, #070707 100%)",
-    coverUrl: "",
+    coverUrl: "/capas/capa-volume-05.jpg",
     pdfUrl: "/ebooks/volume-05-futuro-do-trabalho.pdf",
     pdfFileName: "IA_na_Pratica_Vol_05_Futuro_do_Trabalho.pdf",
     topics: [
