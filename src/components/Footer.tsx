@@ -39,7 +39,7 @@ export default function Footer() {
             </a>
             <p className="mt-3 max-w-xs text-xs leading-relaxed text-neutral-500">
               Projeto de Extensão Universitária do curso de Sistemas de
-              Informação. Coleção aberta, gratuita e educativa.
+              Informação (SI8P33) — UNIP. Coleção aberta, gratuita e educativa.
             </p>
           </div>
 
@@ -96,9 +96,16 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-neutral-900 pt-6 text-xs text-neutral-600 sm:flex-row">
-          <p>
-            Leandro · Sistemas de Informação · Projeto de Extensão Universitária
-          </p>
+          <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-500">
+            <span>Sistemas de Informação SI8P33 · UNIP</span>
+            <span>•</span>
+            <a
+              href="#projeto"
+              className="text-neutral-400 transition-colors hover:text-white underline underline-offset-2"
+            >
+              Colaboradores da Equipe
+            </a>
+          </div>
           <a
             href="#topo"
             className="inline-flex items-center gap-1 text-neutral-500 transition-colors hover:text-white"

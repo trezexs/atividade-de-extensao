@@ -36,7 +36,7 @@ export default function Hero({
 
       <div className="relative mx-auto max-w-3xl text-center">
         <p className="animate-fade-up text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-400">
-          Extensão Universitária • Sistemas de Informação
+          Extensão Universitária • Sistemas de Informação SI8P33 • UNIP
         </p>
 
         <h1

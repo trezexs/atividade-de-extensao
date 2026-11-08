@@ -1,8 +1,32 @@
 // ============================================================================
 //  ACERVO E CONTEÚDO — COLEÇÃO "IA NA PRÁTICA" (EDIÇÃO 2026)
-//  Projeto de Extensão Universitária · Sistemas de Informação · Autor: Leandro
+//  Projeto de Extensão Universitária · Sistemas de Informação SI8P33 · UNIP
 //  Conhecimento • Aplicação • Responsabilidade
 // ============================================================================
+
+export type TeamMember = {
+  name: string;
+  ra: string;
+};
+
+export const courseInfo = {
+  name: "Sistemas de Informação",
+  classCode: "SI8P33",
+  institution: "UNIP",
+  institutionFull: "Universidade Paulista (UNIP)",
+  edition: "Edição 2026",
+};
+
+export const teamMembers: TeamMember[] = [
+  { name: "Gabriel Prazeres dos Santos Lopes", ra: "G87CDE1" },
+  { name: "Henry Oliveira Rodrigues", ra: "G8108G8" },
+  { name: "Jair Roberto Rodrigues de Lima", ra: "G768DC0" },
+  { name: "Leandro Soares Pereira", ra: "N249277" },
+  { name: "Luan Alcântara De Oliveira", ra: "N0900B1" },
+  { name: "Luiza de Souza Gualda", ra: "N247479" },
+  { name: "Matheus Galante Candido", ra: "G769EF8" },
+  { name: "Raphael Pereira Leister", ra: "G811577" },
+];
 
 export type EbookChapter = {
   number: string;

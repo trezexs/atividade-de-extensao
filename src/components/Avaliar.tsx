@@ -63,8 +63,8 @@ export default function Avaliar() {
           Este material ajudou você?
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-neutral-400">
-          Sua participação integra o relatório do Projeto de Extensão em
-          Sistemas de Informação e ajuda a aprimorar a coleção.
+          Sua participação integra o relatório do Projeto de Extensão do curso de
+          Sistemas de Informação (SI8P33 — UNIP) e ajuda a aprimorar a coleção.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 text-left">

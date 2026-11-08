@@ -1,4 +1,4 @@
-import { odsData } from "@/data/ebooks";
+import { odsData, teamMembers, courseInfo } from "@/data/ebooks";
 
 const projectPillars = [
   { value: "06", label: "Guias temáticos (34 pág. cada)" },
@@ -46,7 +46,12 @@ export default function Projeto() {
               <span className="text-white">
                 IA na Prática: Inteligência Artificial aplicada ao cotidiano
               </span>{" "}
-              é um Projeto de Extensão Universitária em Sistemas de Informação.
+              é um Projeto de Extensão Universitária desenvolvido por alunos do
+              curso de{" "}
+              <span className="text-white">
+                Sistemas de Informação ({courseInfo.classCode})
+              </span>{" "}
+              da <span className="text-white">{courseInfo.institutionFull}</span>.
               Cada guia temático de 34 páginas foi estruturado em 5 capítulos
               progressivos, combinando base conceitual sólida, ferramentas de
               apoio à decisão, estudos de caso, plano de implementação e
@@ -125,6 +130,61 @@ export default function Projeto() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* Ficha Técnica e Colaboradores */}
+        <div className="reveal mt-16 border-t border-neutral-800 pt-12">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-neutral-500">
+                Ficha Técnica
+              </p>
+              <h2 className="mt-4 text-2xl font-medium tracking-[-0.02em] text-white md:text-3xl">
+                Equipe e Colaboradores
+              </h2>
+              <div className="mt-5 space-y-2 text-xs leading-relaxed text-neutral-400">
+                <p>
+                  <span className="font-medium text-white">Curso:</span>{" "}
+                  {courseInfo.name} ({courseInfo.classCode})
+                </p>
+                <p>
+                  <span className="font-medium text-white">Instituição:</span>{" "}
+                  {courseInfo.institutionFull}
+                </p>
+                <p>
+                  <span className="font-medium text-white">Modalidade:</span>{" "}
+                  Projeto de Extensão Universitária
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between border-b border-neutral-800 pb-3">
+                <p className="text-xs font-medium uppercase tracking-widest text-neutral-500">
+                  Integrantes do Projeto ({teamMembers.length} colaboradores)
+                </p>
+                <span className="text-[11px] text-neutral-500">
+                  {courseInfo.classCode} · {courseInfo.institution}
+                </span>
+              </div>
+
+              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {teamMembers.map((member) => (
+                  <div
+                    key={member.ra}
+                    className="flex items-center justify-between rounded-lg border border-neutral-800/80 bg-neutral-950 px-4 py-3 transition-colors hover:border-neutral-700"
+                  >
+                    <span className="text-sm font-medium text-white">
+                      {member.name}
+                    </span>
+                    <span className="ml-3 shrink-0 rounded border border-neutral-800 bg-neutral-900 px-2 py-0.5 font-mono text-xs font-medium text-neutral-300">
+                      {member.ra}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
